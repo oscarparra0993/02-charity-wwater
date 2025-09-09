@@ -186,6 +186,9 @@ body {
     font-size: 1em;
   }
 }
+footer{
+  text-align: center;
+}
 
 /* You can add more media queries for even smaller screens if needed */
 /* Media queries help your website look good on all devices! */
