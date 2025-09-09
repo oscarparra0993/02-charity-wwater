@@ -143,4 +143,49 @@ body {
   display: block;
 }
 
-/* Add comments to help students understand each part above */
+/* Responsive design: Make the page look good on mobile devices */
+/* We use media queries to change styles for smaller screens */
+@media (max-width: 768px) {
+  /* Make the hero section text smaller on small screens */
+  #hero h1 {
+    font-size: 1.5em;
+  }
+  #hero p {
+    font-size: 1em;
+  }
+
+  /* Make the carousel shorter on mobile */
+  .carousel-item {
+    height: 250px;
+  }
+  /* Make carousel images fit better on small screens */
+  .carousel-img {
+    max-height: 180px;
+  }
+  /* Stack the carousel columns vertically on mobile */
+  .carousel-item .row {
+    flex-direction: column !important;
+  }
+  .carousel-item .col-md-6 {
+    width: 100%;
+    max-width: 100%;
+  }
+  /* Make story and call-to-action sections have less padding */
+  #story, #call-to-action {
+    padding: 20px 5px;
+  }
+  /* Make the logo smaller on mobile */
+  #logo {
+    width: 60px;
+    top: 10px;
+    left: 10px;
+  }
+  /* Navbar links closer together on mobile */
+  .custom-navbar .nav-link {
+    margin: 0 5px;
+    font-size: 1em;
+  }
+}
+
+/* You can add more media queries for even smaller screens if needed */
+/* Media queries help your website look good on all devices! */
